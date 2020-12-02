@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const USERNAME = process.env['USERNAME'];
 const PASSWORD = process.env['PASSWORD'];
+const PORT = 3006;
 
 let browser, page;
 
@@ -111,5 +112,5 @@ app.get('/follow', async function (req, res) {
 });
 
 
-app.listen(3006);
+app.listen(PORT);
 
